@@ -1,6 +1,27 @@
+/*
+
+#0078fb - синенький
+ 
+#ff2a38 - красненький
+ 
+#00c4a5 - зелененький
+ 
+#ffcd00 - желтелький
+
+*/
+
+
+body{
+  margin: 0;
+  font-family: 'Luckiest Guy', cursive;
+  letter-spacing: 1.5px;
+  box-sizing: border-box;
+}
+
 .main{
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #0078fb 0%, #00c4a5 33.3%,#ffcd00 66.6%,#ff2a38 100%);
 }
 
 .wrapper{
@@ -17,23 +38,58 @@
 
 .input{
   position: absolute;
-  top: 20px;
+  top: 40px;
   left: 50%;
   transform: translateX(-50%);
+  transition: .3s;
+  padding: 5px 10px;
+  min-width: 100px;
+  min-height: 20px;
+  border: 1px solid #afafaf;
+  border-radius: 16px 0;
+  color: #393939;
+}
+.input:focus{
+  outline: none;
+  outline-offset: 0;
+  border-color: #0078fb;
 }
 
 .button{
   position: absolute;
-  top: 50px;
+  top: 90px;
   left: 50%;
+  height: auto;
   transform: translateX(-50%);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 10px 5px 10px;
+  background-color: #00c4a5;
+  color: #393939;
+  transition: .4s;
+}
+
+.button:hover{
+  color: #00c4a5;
+  background-color: #393939;
 }
 
 .result{
   min-width: 150px;
-  height: 30px;
+  max-width: 450px;
+  min-height: 30px;
+  overflow: hidden;
   position: absolute;
   border: 1px solid #aaaaaa;
-  top: 550px;
-  left: 25%;
+  border-radius: 0 16px 16px 16px;
+  padding: 5px 10px;
+  font-size: 16px;
+  line-height: 30px;
+  top: 450px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff2a38;
+  color: #393939;
+  transition: .3s;
 }
