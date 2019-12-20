@@ -20,8 +20,9 @@ body{
 
 .main{
   width: 100vw;
+  min-width: 660px;
   min-height: 100vh;
-  background: linear-gradient(to bottom, #0078fb 0%, #00c4a5 33.3%,#ffcd00 66.6%,#ff2a38 100%);
+  background: linear-gradient(to bottom, #ff2a38 0%,#0078fb 33.3%, #00c4a5 66.6%,#ffcd00 100%);
 }
 
 .wrapper{
@@ -29,11 +30,8 @@ body{
   position: relative;
   min-width: 620px;
   display: flex;
-  justify-content: center;
-}
-
-.img{
-
+  flex-direction: column;
+  align-items: center;
 }
 
 .input{
@@ -92,4 +90,25 @@ body{
   background-color: #ff2a38;
   color: #393939;
   transition: .3s;
+}
+
+
+
+.var{
+  
+}
+
+.title{
+  text-align: center;
+}
+
+.condition{
+  display: block;
+  white-space: pre-wrap;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+}
+
+.task{
+  font-family: Arial, Helvetica, sans-serif;
 }
